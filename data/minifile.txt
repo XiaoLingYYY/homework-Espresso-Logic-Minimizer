@@ -1,0 +1,300 @@
+True
+True
+!a || b || !c
+a || !b || c
+(a && c) || (!a && !b) || (b && !c)
+True
+True
+(a && !b) || (!a && b) || c
+b || !c
+a || !c
+!a || b || !c
+True
+True
+True
+True
+!a || !b || !c
+True
+True
+True
+a || !b || !c
+True
+(a && b) || (!a && !b) || c
+a || !c
+True
+True
+True
+!b || !c
+c
+True
+True
+!a || !b || c
+True
+!a || !b || !c
+a || b
+True
+b || !c
+True
+(a && !b) || (b && c)
+True
+True
+True
+!a || b || !c
+!a || b || c
+True
+a || b
+True
+True
+!a || !b || !c
+True
+!a || !b || c
+a || (b && !c)
+True
+!a || c
+a || !b || c
+b || c
+True
+a || !b || !c
+True
+(!a && !b) || c
+True
+True
+a || !b || c
+a || !b || c
+(a && b) || (!a && !b) || (!b && c)
+a || (b && c)
+True
+!a || !c
+True
+True
+True
+True
+(a && !b) || !c
+a || !b || !c
+!a || !b || !c
+True
+a || b || c
+!a || !b || c
+True
+!a || b || !c
+True
+!a || b || !c
+a || b || c
+a || (b && c)
+True
+!a || b || c
+True
+!a || !b || !c
+b || c
+a || c
+True
+True
+(a && b) || (!b && c)
+!a || b
+a || b || c
+!a || c
+a || b || c
+a || !b || c
+True
+!a || !b || !c
+(!a && b) || c
+c || !d
+(a && !b) || (a && !d) || c
+a || b || c || !d
+!c || !d
+(!a && !b) || c || !d
+True
+a || (!b && d) || c
+!a || !b || !c || !d
+a || !b || !d
+True
+True
+!b || c
+True
+True
+!a || !b
+a || b || c || !d
+!a || !c || !d
+a || c || d
+True
+True
+a || !c || d
+a || !c || d
+True
+True
+True
+(a && d) || (!a && b) || (!b && c) || (!c && !d)
+!a || !b || c || d
+(a && !b) || (a && !d) || (!b && !d) || c
+(a && !c) || !b || !d
+(!a && !b) || (!b && c) || (!b && !d) || (c && !d)
+(a && d) || !b || !c
+True
+True
+True
+True
+True
+(a && !b) || c || !d
+(a && !c && d) || (!a && !d) || !b
+!a || (!b && !c) || d
+True
+(a && !b) || (a && !d) || !c
+b || !c || !d
+True
+(!a && !b) || (!b && c) || (c && d)
+True
+!a || (!b && d) || (c && d)
+True
+(a && b) || !c || !d
+True
+(a && b && !d) || (a && !b && d) || (!a && !b && !c) || (!a && !c && !d)
+!a || b || c || !d
+a || b || !c || d
+(a && c) || (!a && !c) || !b || !d
+a || !b || d
+True
+True
+True
+(!a && c) || !b || d
+True
+a || d
+True
+True
+True
+True
+a || b || c || d
+True
+True
+a || (!b && d)
+True
+True
+(!a && b && !d) || (!a && !b && c && d) || (!a && !c && !d)
+a || (!b && d) || (!c && d)
+True
+(a && !d) || (!a && !c) || !b
+!a || (b && c) || d
+a || (!b && !c) || d
+True
+a || b || !c || !d
+True
+a || !b
+(!a && b) || (!a && !c) || (b && !c) || d
+!b || !c || d
+!a || (!b && !c)
+True
+True
+(a && !c) || b || !d
+!a || c || d
+(!a && !d) || c
+(!a && d) || (b && c && d) || (!b && c && !d)
+True
+a || !b || !c || !d
+True
+True
+!a || (!b && !c) || !d
+(a && b) || (b && !c) || !d
+a || b || c || !d
+True
+a || (b && !d) || (!b && d) || c
+True
+!a || b || !c || d
+(a && b && !c && d && e && f && g && !h && j && l) || (!a && b && !c && d && !e && h && k) || (!c && d && !e && !f && g && k && l)
+(a && !b && !d && e && f && !g && !h && !k) || c || j
+e || (g && !k) || l
+(a && b && h && k && !l) || (a && !b && e && i && j && l) || d || !f
+(a && b && !c && !d && !g && !i && j && k && !l) || (a && !b && !c && !f) || (a && !b && !d && !f && !h && i && j) || (!f && !j && l)
+(a && b && !c && !e && !g && !k) || (!b && !d && !e && h && !i && j && l) || (!f && !l) || (!g && h && i) || (k && l)
+(!b && e && !f && !h && i && !l) || !c || k
+!b || d || !e || !h || !k
+(a && b && i && l) || (a && !b && c && !e && !f && j && !l) || (!f && g) || !h
+(a && c && !d && e && f && g && !h && i && j && !k) || (!a && c && d && !f && !g && !i) || (b && j) || (c && !d && !f && k) || l
+h || !k
+(a && e && !j) || (!a && !c && d && !f && !h) || (b && d && k && !l) || i
+(!d && !i) || k || !l
+(a && !b && c && !e && f && g && h && i && !j && k && l) || (!a && !b && d && !e && g && i && j && k && !l) || (f && !g && !i && !l)
+!e && !i
+(a && !b && !c && !d && !e && i && j && k && l) || f || g || !h
+(b && !f && h && i && k) || e || (!g && k) || (!i && k && !l) || !j
+(b && !g && j) || f
+(!a && !b && h && i) || e || g || l
+(!a && !b && c && !d && !f && !h && !k && l) || e || !i || j
+(a && b && !c && e && !h && !j && !k && l) || (!b && !c && d && !e && f && h && k) || g || !i
+a || (!c && !j) || (!e && !k) || !g || i
+!a || (b && !d && !f && g) || (!b && d) || (!f && i) || h
+(a && b && d && e && f && !g && h && i && !j && !k && !l) || (!b && d && e && !f && g && !h && i && j && k && l) || !c
+(a && !b && !c && d && !e && f && g && i && !j && k && !l) || (a && !c && !e && f && !i && !k && !l) || h
+(!a && !b && c && !d && e && f && g && !h && i && !j && l) || (!g && h && !i && !l) || k
+!a || (b && d && !k) || (!b && d && !e && !f && !h && l) || c
+(a && b && !c && d && e && f && !g && h && i && !j && !k && l) || (a && b && !c && f && !g && h && i && !j && k && !l) || (c && !e)
+(a && b && c && !e && j && !l) || (!a && !b && c && d && e && f && !g && h && j && !k && l) || !i || (!j && k)
+(!a && e) || (!b && !c && !e && !g && !j && k && l) || (c && f && g && h && !i && !j && !k) || (!c && d && !h && i && !j && l) || (d && !k)
+True
+f || (g && !j) || l
+(a && b && c && d && !e && !f && !g && !h && i && !j) || (!a && d && !e && !f && !k) || (!b && !g && !k) || (!h && !k) || l
+(b && d && f && !g) || (b && !d && !f && i && j && l) || (b && !d && !j && !k && !l) || c || (e && !g) || (i && !k)
+(a && i && k) || (!a && !f) || !d || g || !h
+(!a && !e && !f && l) || (!a && !k) || (!b && !c && d && !e && f && g && h && !j && !k && l) || (!d && !f && g) || i
+(a && b && !e && f && !h && !l) || !g || !i || k
+(a && b && c && d && f && g && h && !i && j && !k && l) || (!a && b && c && !d && !e && h && i && j && k) || (!c && e && g && l)
+(!c && !d && !e && !f && g && h && i && l) || (d && e && !f && !i) || !k
+(a && !b && !d && h && i && k) || (a && c && f && i) || !e || (h && l)
+!d || g || l
+(c && d && !e && !f && !g && h && l) || (f && !h && !k) || (!h && i && k) || j
+(a && b && d && !f && !h && !i && !j && l) || (b && c && !e && h && k) || (c && e && !h && !k && l) || (c && !g) || (!g && l)
+(a && c) || (!a && !b && !d && e && g && !h && !i && k && !l) || (!g && !i && !j && !l)
+(a && i) || (!b && !c && e && !f && g && !h && i && j && !k) || d || (!k && !l)
+(a && !b && d && e && !f && g && !h && !i && j && k) || (!a && !b && !k) || (h && !j) || l
+(a && b && c && d && !e && !f && !g && h && !i && j && !k && l) || (a && !d && f) || (!a && b && f && g && !i && k) || (!c && !f && i)
+(a && !c && !e) || (!a && b && !d && !e && h && i && !k) || (b && g && !h && !i && j && !k) || (!c && !f && g && k) || (g && i && k)
+(!a && b && c) || (!b && c && !e && !f && g && !h && i) || !d || k
+b || (c && d && f && !h && i && !k && !l) || (!g && !l) || j
+a || (!b && !d && e && f && g && !h && i && !j && l) || (e && !g && h && l) || (!e && j) || (f && g && h && !l) || !k
+(a && g && i) || (!a && c && !d && i && k) || (!b && !e) || (c && d && !l) || (c && e && f && !l) || (c && g && !h && k) || (!c && h && l)
+(b && !c) || h || i
+(a && !c && !d && !f && i) || (a && !d && !l) || !j || k
+(a && !d && f && k) || (!a && !b && !c && d && e && f && !g && !h && i && j && !k) || (c && !f && k) || l
+(!a && b && !c && d && e && f && !g && !i && !j && l) || (b && c && !d && g && k) || (c && j) || (!c && !f && !g && !k) || (d && !h)
+True
+(a && b && !c && !d && h && !k && l) || (!a && d && e && !i) || (!c && !d && f && !g && i && k && !l) || (!c && !d && i && j && k)
+(a && !b && k) || (a && c && !d && !h && !i && !k) || (!a && b && c && d && !f && i && !j && !k) || !l
+(!a && c && !h && i) || (c && !f && i) || (!e && h) || !l
+(a && !b && !c && !d && !e && !f && !g && !h && i && !j && l) || (a && !c && d && !f && g && h && !i && !k && l) || (i && !j && k)
+(a && c && !d && !e && f && i && j && l) || (a && g) || (b && d && !e && !f && g && !i && !j && k && l) || (!e && h)
+(!b && l) || c || !d || !e || g || (j && !k && !l)
+(a && b && !f && !i && !j) || (a && b && h && !j && !k && !l) || (b && d && g && !h && !i && !j && k && !l) || (c && !h && l) || (e && j)
+(a && !b && !d && g) || !e || !j
+(a && !b && c && !d && !e && f && g && h && !i && j && !k) || (!a && d && f && !g && h && i && !j && k) || (!c && d && !f && !g && k)
+(!a && b && c && !d && !i && j && !l) || (c && !d && g && !i) || (!c && !j) || e || f || !h || (!k && !l)
+(!a && b && !d && !e && f && h && !i && !j && k && !l) || (b && c && !f && !h && j && l) || (c && g && !h) || (!d && !h && !j && !k && l)
+(!a && d && e && !f && !j) || (b && f) || (!b && d && !f && !g && k && !l) || (c && d && e && !f && !g && h && !i && !j) || (!d && !k)
+True
+(a && c) || (a && g) || !b || !e || f || !j
+True
+!a || (!b && !c && d && f && !g && !h && j && k && l) || (c && d && f && !g && !i && k && !l) || e || (!i && !j && !k)
+(a && !c && !d && e && !h && !i && !l) || (!e && i && l) || !g || !j || !k
+(a && c && d && !e && f && g && h && i && j && !k && l) || b
+(!a && b && !f && l) || (!a && g) || (!b && !c && !d && !e && !f && g && !h && i && j && k && l) || (c && d && e && !g && !i && !j && k)
+(c && d && g && i && j) || (c && k) || (d && !g && !i && k && !l) || (e && f && !h && k && !l) || (!f && i && j)
+(c && !k) || i
+(a && !b && c && !d && e && !g && !h && i && !j && k && !l) || (b && !c && k)
+True
+b || e
+(a && b && !d && !g && !i && k && !l) || (!a && c && !d && !f && !g && j && k && l) || (!c && d && !e && !f && g && !i && !j && !k && !l)
+(a && c && d && e && f && !j && l) || (a && f && g && l) || b || (!c && !d && f && g && !h && j) || (e && !h) || (!e && !g && !l)
+(a && !b && c && !i && k) || (!a && !b && c && !d && !f && h && j && !k) || (b && d && !e && g && h && !i && k) || (c && d && !g) || l
+(!a && e && f && !i) || g || !j || !k
+(a && !b && !d && !g && h && !l) || (a && c && d && e && g && !h && !i && j) || (!a && b && d && e && !f && !g && !h && i && j && k)
+!e
+c || j
+a || (b && d && f && !g && h && !i && j && k && l) || (!b && c && d && e && !g && h && i && !j && l) || (c && h && !i && !k)
+(a && !b && !c && !d && f && g) || (f && g && l) || h || i
+!a || (c && e && !i && !j && !k)
+(!b && f) || !c || g
+(a && k) || (!b && !c && !d && !g && h && i && k && l) || !e || !f
+(!a && c && d && !e && f && !h && !j && k && !l) || (!a && !e && !h && i && !l) || (b && f && !j) || (!d && e && f && !g && h)
+(a && !b && !h) || (a && d && !h && k) || (!a && b && d && h) || !l
+(b && g && !h && !i && j && k) || !l
+(!a && !b && c && f && !g && h && !i && !j && k && l) || (!c && h && j && !k && l) || (e && h)
+(b && d && !f && g && j && k) || !e || (!h && k)
+(!a && b && c && f && !g && h && !i && !j && k) || (!c && !h && k) || (!d && !i) || (e && !f && g)
+(!a && e && !h && !i && !j && !k) || !b || c || (d && !j) || (e && g)
