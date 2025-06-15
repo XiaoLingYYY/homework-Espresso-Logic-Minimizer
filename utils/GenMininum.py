@@ -4,9 +4,7 @@
 
 WolframKernel_path = r"C:\Program Files\Wolfram Research\Mathematica\14.0\WolframKernel.exe"
 
-
-
-origin_file = "../data/expressions.txt"
+origin_file = "../data/output.txt"
 mini_file = "../data/minifile.txt"
 
 from wolframclient.evaluation import WolframLanguageSession

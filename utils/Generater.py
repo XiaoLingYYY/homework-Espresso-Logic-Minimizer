@@ -1,5 +1,5 @@
 import random
-import itertools
+
 
 # 表达式生成
 def generate_literal(variable):
@@ -30,13 +30,13 @@ def generate_expression_format(num_literals, num_vars):
 # 主函数
 if __name__ == "__main__":
     scales = {
-        'small': (10, 3),
-        'medium': (16, 4),
-        'large': (24, 12)
+        'small': (24, 5),
+        'medium': (24, 5),
+        'large': (24, 5)
     }
 
     with open("../data/expressions.txt", "w") as f:
         for label, (num_lits, num_vars) in scales.items():
-            for i in range(100):
+            for i in range(3000):
                 expr, vars_list = generate_expression_format(num_lits, num_vars)
                 f.write(f"({expr})\n")

@@ -98,14 +98,14 @@ def cost(cover, var_map):
     """计算一个覆盖的成本（SOP成本：乘积项数 + 文字数）。"""
     if not cover: return 0
     num_literals = sum(1 for cube in cover for i in range(0, len(cube), 2) if cube[i:i + 2] != '11')
-    return len(cover) * 10 + num_literals
+    return len(cover) * 9 + num_literals
 
 
 # ==== Espresso 三个操作 ====
 
 def expand(cover, off_set):
     # EXPAND: 将每个立方体扩展为素蕴含项，使其尽可能大而不与OFF-set冲突
-    # 主要逻辑是：优先扩展包含文字最多的立方体
+    # 优先扩展包含文字最多的立方体,感觉比较优
     expanded_cover = []
 
     sorted_cover = sorted(cover, key=lambda c: c.count('11'))
@@ -120,7 +120,7 @@ def expand(cover, off_set):
                     expanded_once = list(temp_cube);
                     expanded_once[i:i + 2] = '11'
                     expanded_once = "".join(expanded_once)
-                    # 如果expand后不与OFF-set相交，则是有效
+                    # 如果expand后不与OFF-set相交，就可以展
                     if not any(cube_intersection(expanded_once, off) for off in off_set):
                         temp_cube = expanded_once;
                         can_expand = True;
@@ -136,27 +136,39 @@ def irredundant(cover):
         cube_to_check = final_cover[i]
         other_cubes = final_cover[:i] + final_cover[i + 1:]
         if not other_cubes: continue
-        # 如果一个立方体的所有最小项都被其他立方体覆盖，则它是冗余的
+        # 如果一个ube的所有最小项都被其他cube覆盖，则它是冗余的
         if all(is_covered(m, other_cubes) for m in get_minterms(cube_to_check)):
             final_cover.pop(i)
     return final_cover
 
 
 def reduce(cover):
-    # REDUCE: 在保持功能不变的前提下，尽可能地缩小每个立方体。
-    final_cover = []
-    for i, cube_to_reduce in enumerate(cover):
-        context_cover = cover[:i] + cover[i + 1:]
+    # REDUCE: 在保持功能不变的前提下，尽可能地缩小每个ube
+    # 启发式排序：先处理包含较少 literals（即较大）的立方体, 感觉这会为后cube提供更好的缩减环境
+    temp_cover = sorted(cover, key=lambda c: c.count('11'), reverse=True)
+
+    for i in range(len(temp_cover)):
+        cube_to_reduce = temp_cover[i]
+        # 取当前覆盖中除自身以外的所有其他立方体
+        context_cover = temp_cover[:i] + temp_cover[i + 1:]
+        # 如果没有其它cube，不进行缩减
+        if not context_cover:
+            continue
+
+        # 1. 识别当前立方体的“本质”最小项
+        # 这些是只被当前立方体覆盖，而未被上下文中任何其他立方体覆盖的最小项
         context_minterms = set().union(*(get_minterms(c) for c in context_cover))
-        # 识别当前立方体的"本质"最小项
         essential_minterms = get_minterms(cube_to_reduce) - context_minterms
-        print(type(essential_minterms));
-        # 是否有本质最小项
+
         if not essential_minterms:
-            # 如果没有本质最小项，说明此立方体可能冗余，暂时保留
-            final_cover.append(cube_to_reduce)
+            # 2a. 如果没有本质最小项，说明此立方体相对于当前上下文是冗余的。
+            # 我们不改变它，留给后续的 `irredundant` 步骤来决定是否移除。
+            reduced_cube = cube_to_reduce
         else:
-            # 否则，将立方体缩减为其本质最小项的超立方体
+            # 2b. 否则，将立方体缩减为其本质最小项的超立方体。
             reduced_cube = supercube(essential_minterms)
-            final_cover.append(reduced_cube)
-    return final_cover
+
+        # 3. 立即用缩减后的立方体更新列表,进行下一回合
+        temp_cover[i] = reduced_cube
+
+    return temp_cover
